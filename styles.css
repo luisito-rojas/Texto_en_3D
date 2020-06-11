@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(36,36,36);
+}
+.contenedor{
+    text-align: center;
+}
+/*APLICANDO LOS ESTILOS PARA EL CONTENEDOR DEL TEXTO*/
+.contenedor .cont-texto{
+    display: inline-block ;
+    margin: 100px auto;
+}
+/*Aplicando estilos 3D para el texto*/
+.contenedor .cont-texto .texto{
+    color: rgb(10,180,137);
+   /* color: #fff;*/
+    text-align: center;
+    font-size: 100px;
+    transform: perspective(400px) rotateX(20deg);
+    letter-spacing: .1em;
+    user-select: none;
+    transition: all .4s ease;
+    text-shadow: 0 -1px 0 #fff,
+                 0 1px 0 #004d40,
+                 0 2px 0 #00483b,
+                 0 3px 0 #004639,
+                 0 4px 0 #004336,
+                 0 5px 0 #004134,
+                 0 6px 0 #003f32,
+                 0 7px 0 #003d30,
+                 0 8px 0 #003a2d,
+                 0 9px 0 #00382b,
+                 0 10px 0 #003528,
+                 0 11px 0 #003225,
+                 0 12px 0 #002f22,
+                 0 13px 0 #002b1e,
+                 0 14px 0 #00281c,
+                 0 15px 0 #001f13;
+                
+                 
+}
+/*APLICANDO EFECTO HOVER AL TEXTO 3D*/
+.contenedor .cont-texto .texto:hover{
+    transition: all .4s ease;
+    text-shadow: 0 0px 0 #000;
+    transform: translate(0px 15px)
+                perspective(200px)
+                rotateX(10deg);
+
+    letter-spacing: .12em;
+
+}
